@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, blue, rgb(0, 208, 255), rgb(0, 251, 255));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    color: white;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+    margin-bottom: 120px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho-menu-links{
+    font-family: 'Black Ops One', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilização da seção da galeria */
+.galeria {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    padding: 20px; /* Espaçamento entre os itens */
+    height: 100vh; /* Define a altura da galeria para ocupar toda a altura da tela */
+}
+
+/* Estilização do título da galeria */
+.titulogaleria {
+    /* Define o tamanho da fonte como 36px */
+    font-size: 30px;
+
+    /* Define a família de fontes como 'Krona One' com fallback para sans-serif */
+    font-family: 'Black Ops One', cursive;
+
+    /* Alinha o texto justificado */
+    text-align: center;
+
+    /* Adicione uma margem inferior para separar dos itens */
+    margin-bottom: 2050px; /* Você pode ajustar esse valor conforme necessário */
+}
+
+.item {
+    width: 100%;
+    max-width: 300px; /* Ajuste a largura máxima conforme necessário */
+    background-color: linear-gradient(to bottom, #1d2b53, #7e2553, #ff5555);
+    padding: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 20px; /* Margem inferior e centralização horizontal */
+    text-align: center;
+}
+
+/* Estilização das imagens dentro dos itens */
+.itemimg {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid #000;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Efeito de escala ao passar o mouse */
+.item:hover .itemimg {
+    transform: scale(1.05);
+}
+
+/* Estilização dos títulos das imagens */
+.itemh2 {
+    font-size: 15px;
+    font-family: 'Black Ops One', cursive;
+    margin-top: 10px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+
+/* Espaçamento entre o conteúdo principal (main) e o rodapé (footer) */
+.rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color: #006aa3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+/* Estilo de link no rodapé */
+.rodape a:hover {
+    color: #00c8ff;
+}
